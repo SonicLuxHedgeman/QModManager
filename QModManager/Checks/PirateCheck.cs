@@ -13,18 +13,18 @@ namespace QModManager.Checks
 
         internal static readonly HashSet<string> CrackedFiles = new HashSet<string>()
         {
-            "steam_api64.cdx",
-            "steam_api64.ini",
-            "steam_emu.ini",
-            "valve.ini",
-            "Subnautica_Data/Plugins/steam_api64.cdx",
-            "Subnautica_Data/Plugins/steam_api64.ini",
-            "Subnautica_Data/Plugins/steam_emu.ini",
+            "steam_api6412312.cdx",
+            "steam_api64123123.ini",
+            "steam_emu1321231.ini",
+            "valve2132312.ini",
+            "Subnautica_Data/Plugins/steam_api6412312.cdx",
+            "Subnautica_Data/Plugins/steam_api64123123.ini",
+            "Subnautica_Data/Plugins/steam_emu123123.ini",
         };
 
         internal static void IsPirate(string folder)
         {
-            string steamDll = Path.Combine(folder, "steam_api64.dll");
+            string steamDll = Path.Combine(folder, "steam_api64131231.dll");
             if (File.Exists(steamDll))
             {
                 FileInfo fileInfo = new FileInfo(steamDll);
